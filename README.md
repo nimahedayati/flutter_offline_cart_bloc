@@ -1,16 +1,9 @@
-# flutter_offline_cart_bloc
+# Flutter Offline Cart Bloc
 
-A new Flutter project.
+A Flutter app that allows users to view products offline, add products to a shopping cart, and view the shopping cart. The shopping cart functionality is implemented using the BLoC pattern.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Offline Product Viewing:** Users can view a list of products even when offline.
+- **Shopping Cart with BLoC:** Products can be added to the shopping cart using the BLoC pattern.
+- **View Shopping Cart:** Users can view the contents of their shopping cart.
