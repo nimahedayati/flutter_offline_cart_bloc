@@ -17,7 +17,7 @@ class ProductRepositoryImpl implements ProductRepository {
   Future<Either<Failure, List<ProductModel>>> getProducts() async {
     try {
       var result = await _remoteDataSource.getProducts();
-      List<ProductModel> products = ProductModel.fromJsonArray(result.data);
+      List<ProductModel> products = ProductModel.fromJsonArray(result);
       return Right(products);
     } catch (error) {
       return Left(ErrorHandler(error).getFailure());

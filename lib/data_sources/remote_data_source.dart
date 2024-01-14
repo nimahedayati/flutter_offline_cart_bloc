@@ -11,7 +11,7 @@ class RemoteDataSourceImpl implements RemoteDataSource {
 
   @override
   Future getProducts() async {
-    var response = await _dio.post('https://fakestoreapi.com/products');
+    var response = await _dio.get('https://fakestoreapi.com/products');
     return response.data;
   }
 }
