@@ -28,4 +28,8 @@ class ProductModel {
         image: json['image'],
         rating: ProductRatingModel.fromJson(json['rating']),
       );
+
+  static List<ProductModel> fromJsonArray(List json) {
+    return json.map((e) => ProductModel.fromJson(e as Map<String, dynamic>)).toList();
+  }
 }
